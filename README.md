@@ -89,11 +89,10 @@ Include the 1 side’s primary key as a foreign key on the N side. <br />
 HERE BELONGS_TO and WORKS_FOR are reduced. Employee table is modified to: <br />
 <br />![img4](https://user-images.githubusercontent.com/82283086/221423621-a66ce125-0d8b-45b9-811a-f60ff69d9585.png) <br />
 
-
 5. Mapping M:N relationship: <br />
 Create a new relation whose primary key is the combination of both sides primary keys and include any relationship attributes. 
 Works_with: <br />
-<br />![img5](https://user-images.githubusercontent.com/82283086/221423565-e0bcc95d-f74a-4394-8a8f-281990a54158.png)
+<br />![img5](https://user-images.githubusercontent.com/82283086/221423565-e0bcc95d-f74a-4394-8a8f-281990a54158.png)<br />
 
 
 
