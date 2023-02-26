@@ -65,30 +65,35 @@ To make this company database realistic, the following extra ASSUMPTIONS HAVE BE
 ### Explanation: 
 For explaining why a relational schema is reduced I shall go back to the ER model and start converting it to a relational schema. Following the steps will provide as an explanation in itself.
 
+![color](https://user-images.githubusercontent.com/82283086/221423352-643220b8-e279-409c-8a44-cfd3985a7d0c.png) <br />
+
 1. Mapping regular entity type:
-Employee, Branch, Department
-
-2. Mapping weak entity types: Supplier
-Primary key of new relation = primary key of owner/identifying set + discriminators
-
-3. Mapping 1:1 relationship:
-Include one side’s primary key as a foreign key on the other side favouring total participation.
-HERE MANAGES IS REDUCED and department is modified to: 
-
-Where mgr_id references emp_id of employee table
+Employee, Branch, Department <br />
+<br />![img1](https://user-images.githubusercontent.com/82283086/221423392-c6674d29-bfe2-45db-99a5-87fb81a9cc93.png) <br />
 
 
-4. Mapping 1: N relationship:
-Include the 1 side’s primary key as a foreign key on the N side.
-HERE BELONGS_TO and WORKS_FOR are reduced. Employee table is modified to:
-
-And then:
+2. Mapping weak entity types: Supplier <br />
+Primary key of new relation = primary key of owner/identifying set + discriminators <br />
+<br />![img2](https://user-images.githubusercontent.com/82283086/221423425-b23e3681-fe54-4cad-ad56-c373cce1c9d5.png) <br />
 
 
+3. Mapping 1:1 relationship: <br />
+Include one side’s primary key as a foreign key on the other side favouring total participation. <br />
+HERE MANAGES IS REDUCED and department is modified to: <br />
+<br />![img3](https://user-images.githubusercontent.com/82283086/221423555-65bae7b6-4e15-4d25-8c27-c6bf85b1d480.png) <br />
+Where mgr_id references emp_id of employee table <br />
 
-5. Mapping M:N relationship:
-Create a new relation whose primary key is the combination of both sides primary keys and include any relationship attributes.
-Works_with:
+
+4. Mapping 1: N relationship: <br />
+Include the 1 side’s primary key as a foreign key on the N side. <br />
+HERE BELONGS_TO and WORKS_FOR are reduced. Employee table is modified to: <br />
+<br />![img4](https://user-images.githubusercontent.com/82283086/221423621-a66ce125-0d8b-45b9-811a-f60ff69d9585.png) <br />
+
+
+5. Mapping M:N relationship: <br />
+Create a new relation whose primary key is the combination of both sides primary keys and include any relationship attributes. 
+Works_with: <br />
+<br />![img5](https://user-images.githubusercontent.com/82283086/221423565-e0bcc95d-f74a-4394-8a8f-281990a54158.png)
 
 
 
